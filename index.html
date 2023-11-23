@@ -20,55 +20,56 @@
         integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
         crossorigin="anonymous"></script>
 
-    <title>Document</title>
+    <title>Home - Rays Academy</title>
 </head>
 
 <body>
     <!-- Nav Bar Section -->
     <div class="container ">
-        <nav class="navbar navbar-expand-md  fixed-top ">
-            <div class="container-fluid">
-                <div class="navbar-brand"><img class="img-fluid p-lg-5 " src="images/header-logo.png" alt=""></div>
-                <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
-                    <div class="navbar-nav coll d-md-none d-sm-flex ">
-                        <a class="nav-link" href="#">Home</a>
-                        <a class="nav-link" href="#">Course Details</a>
-                        <a class="nav-link" href="#">Upcoming Batches</a>
-                        <button class="btn d-flex align-items-start p-0  " data-bs-toggle="modal"
-                            data-bs-target="#staticBackdrop"><img class="p-0 "
-                                src="images/Primary Enquire Now-small.png" alt=""></button>
-                    </div>
 
-                </div>
-                <div
-                    class="navbar-nav ms-auto d-none d-lg-flex   gap-lg-5 p-lg-5  justify-content-center align-items-lg-center ">
-                    <a class="nav-link" href="#">Home</a>
-                    <a class="nav-link" href="#">Course Details</a>
-                    <a class="nav-link" href="#">Upcoming Batches</a>
+    </div>
+    <nav class="navbar navbar-expand-md  fixed-top ">
+        <div class="container-fluid">
+            <div class="navbar-brand"><img class="img-fluid p-lg-5 " src="images/header-logo.png" alt=""></div>
+            <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup">
+                <span class="navbar-toggler-icon"></span>
+                <span class="my-1 mx-2 close">X</span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+
+                <div class="navbar-nav coll d-md-none d-sm-flex ">
+                    <a class="nav-link" href="#home">Home</a>
+                    <a class="nav-link" href="#course-details">Course Details</a>
+                    <a class="nav-link" href="#upcomingBatches">Upcoming Batches</a>
                     <button class="btn d-flex align-items-start p-0  " data-bs-toggle="modal"
                         data-bs-target="#staticBackdrop"><img class="p-0 " src="images/Primary Enquire Now-small.png"
                             alt=""></button>
                 </div>
             </div>
-        </nav>
-    </div>
+            <div
+                class="navbar-nav ms-auto d-none d-lg-flex   gap-lg-5 p-lg-5  justify-content-center align-items-lg-center ">
+                <a class="nav-link" href="#home">Home</a>
+                <a class="nav-link" href="#course-details">Course Details</a>
+                <a class="nav-link" href="#upcomingBatches">Upcoming Batches</a>
+                <button class="btn d-flex align-items-start p-0  " data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop"><img class="p-0 " src="images/Primary Enquire Now-small.png"
+                        alt=""></button>
+            </div>
+        </div>
+    </nav>
 
     <!-- Headline Section -->
-    <div class="container ">
+    <div id="home" class="container "><br>
         <div class="row headline ">
             <div class="col-md-7 col-sm-8 ">
                 <p class="title">Online/Offline</p>
-                <p class="sub-title">LEARN LANGUAGES<br>WITH ONLINE COURSES</p>
-                <p class="text">Expand your ability to communicate with people across the globe. Learn Spanish,
-                    German &
-                    English
-                    grammar, vocabulary, and more with online courses.</p>
-                <div class="">
+                <p class="sub-title">LEARN LANGUAGES WITH ONLINE COURSES</p>
+                <p class="text">Expand your ability to communicate with people across the globe. Learn Spanish, German &
+                    English grammar, vocabulary, and more with online courses.</p>
+                <div>
                     <button class="btn"><img class="img-fluid" src="images/headline-enq-btn.png" alt=""></button>
+                    <label class="label"><img src="images/btn-text.png" alt=""></label>
                     <button class="btn"><img class="img-fluid" src="images/Secondary Call us.png" alt=""></button>
                 </div>
             </div>
@@ -81,9 +82,9 @@
     </div>
 
     <!-- Get Prepared For  -->
-    <div class="container get-prepared text-center  ">
+    <div class="container get-prepared text-center">
         <div class="">
-            <p class="title">Get prepared for</p>
+            <p class="title">Get Prepared For</p>
             <p class="text">We are dedicated to making language learning and enriching an immersive experience. Our
                 mission is to
                 empower its students with the skills to
@@ -99,7 +100,7 @@
     </div>
 
     <!-- Counter Section -->
-    <div class="container-fluid  ">
+    <div class="container">
         <div class="row counter">
             <div class="col-md-4 d-flex justify-content-center align-items-center  ">
                 <p class="count mx-2 ">2045</p>
@@ -209,7 +210,8 @@
     </div>
 
     <!-- Course Details Section -->
-    <div class="container-fluid  course-details ">
+    <div id="course-details"></div><br><br>
+    <div id="courseDetails" class="container course-details ">
         <div>
             <p class="title">Course Details</p>
             <p class="text">At RAYS we follow the structure according to the <span>CEFR (The Common European Framework
@@ -218,20 +220,23 @@
         </div>
         <div class="btn-grp-fluid my-5 ">
             <div class="d-flex col-md-5 col-xs-4 gap-3 mx-lg-5 ">
-                <button class="btn btn-primary flex-grow-1 my-3  ">Spanish</button>
-                <button class="btn btn-primary flex-grow-1 my-3  ">German</button>
-                <button class="btn btn-primary flex-grow-1 my-3 ">English</button>
+                <button class="btn btn-primary flex-grow-1 my-3"
+                    onclick="location.href='#spanish-course'">Spanish</button>
+                <button class="btn btn-primary flex-grow-1 my-3"
+                    onclick="location.href='#german-course'">German</button>
+                <button class="btn btn-primary flex-grow-1 my-3"
+                    onclick="location.href='#english-course'">English</button>
             </div>
         </div>
     </div>
-    <div class="container country ">
-        <div class="top d-flex my-4 ">
+    <div id="spanish-course" class="container country"><br><br><br>
+        <div class="top d-flex mb-4 ">
             <div class="">
                 <img class="img-fluid px-3 " src="images/spanish-flag.png" alt="">
             </div>
             <div class="mt-3">
                 <img class="img-fluid " src="images/Spanish-name.png" alt="">
-                <p class="name">Syllabus - AULA</p>
+                <p class="spanish-name">Syllabus - AULA</p>
             </div>
         </div>
         <div>
@@ -429,7 +434,7 @@
         </div>
         <hr>
     </div>
-    <div class="container country  ">
+    <div id="german-course" class="container country"><br><br><br>
         <div class="top d-flex my-5 ">
             <div class="">
                 <img class="img-fluid px-3 " src="images/german-flag.png" alt="">
@@ -633,8 +638,7 @@
         </div>
         <hr>
     </div>
-
-    <div class="container country ">
+    <div id="english-course" class="container country "><br><br><br>
         <div class="top d-flex my-4 ">
             <div class="mt-3">
                 <img class="img-fluid " src="images/english-name.png" alt="">
@@ -767,8 +771,8 @@
     </div>
 
     <!-- Upcoming Batches Section -->
-    <div class="container upcoming-batches">
-        <div class=" text-center ">
+    <div id="upcomingBatches" class="container upcoming-batches"><br><br><br>
+        <div class=" text-center mt-5">
             <h1 class="heading">Upcoming Batches</h1>
             <p class="sub-heading">Get the basics right. Speak with confidence.</p>
         </div>
@@ -995,8 +999,9 @@
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered modal-fullscreen-sm-down ">
             <div class="modal-content">
-                <div class="header">
+                <div class="modal-header ">
                     <h1 class="modal-title fs-5 text-center" id="staticBackdropLabel">Admission Open</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="row">
@@ -1036,14 +1041,25 @@
                             <label class="mx-2 fw-semibold" for="floatingSelectLevelGrid">Select Level</label>
                         </div>
                         <div class="col-md-4 mb-4 ">
-                            <button type="button" class=" btn btn-primary" data-bs-dismiss="modal">Submit</button>
-                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class=" btn btn-lg  btn-primary" data-bs-toggle="button"
+                                autocomplete="off" data-bs-dismiss="modal">Submit</button>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+
+    <script>
+        const navLinks = document.querySelectorAll('.coll')
+        const menuToggle = document.getElementById('navbarNavAltMarkup')
+        const bsCollapse = new bootstrap.Collapse(menuToggle, { toggle: false })
+        navLinks.forEach((l) => {
+            l.addEventListener('click', () => { bsCollapse.toggle() })
+        })
+    </script>
 </body>
 
 </html>
