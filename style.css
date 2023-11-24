@@ -215,6 +215,16 @@
   .course-details .btn-grp-fluid {
       height: 76px;
       background: #F1F1F1;
+      display: flex;
+      align-items: center;
+      padding-left: 20px;
+  }
+
+  .course-details .btn-grp-fluid .btn {
+      color: #00094F;
+      font-weight: 400;
+      border: none;
+      padding: 10px;
   }
 
   #german-course .title {
@@ -401,7 +411,9 @@
       background: #d8edf6;
   }
 
-  .fasttrack .title {
+  .fasttrack .title1 {
+      display: flex;
+      align-items: center;
       color: #252B42;
       font-family: Montserrat;
       font-size: 24px;
@@ -684,7 +696,6 @@
 
   .country-btngrp .btn:hover::after {
       width: 100%;
-      transition: width .3s;
   }
 
   .gallery {
