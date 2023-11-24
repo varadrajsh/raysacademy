@@ -4,7 +4,12 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+  }
 
+  .navbar {
+      background-color: #FFF;
+      box-shadow: 0px 4px 20px 0px #0000000D;
+      height: 110px;
   }
 
   .navbar-toggler>.close {
@@ -16,11 +21,6 @@
       display: none;
   }
 
-  .navbar {
-      background-color: #FFF;
-      box-shadow: 0px 4px 20px 0px #0000000D;
-      height: 110px;
-  }
 
   .coll {
       margin-top: 30px;
@@ -42,12 +42,10 @@
   .navbar a:hover {
       border-bottom: 2px solid #E6074B;
       transition: 0.1s linear;
-      width: max-content;
   }
 
-
   .headline {
-      margin-top: 150px;
+      margin-top: 170px;
   }
 
   .headline .title {
@@ -104,10 +102,34 @@
       letter-spacing: 0.2px;
   }
 
+  .admission-open-bg {
+      background-color: #00094f;
+      border-radius: 8px
+  }
+
+  .admission-open-bg .form-bg {
+      background-color: #fff;
+      padding: 25px;
+      border-radius: 8px;
+  }
+
+  .admission-text {
+      font-family: "Montserrat", Helvetica;
+      font-weight: 700;
+      color: #fff;
+      font-size: 24px;
+      text-align: center;
+      letter-spacing: 0.2px;
+      line-height: 0px;
+      white-space: nowrap;
+      font-style: normal;
+      margin-top: 40px;
+      padding-top: 30px;
+  }
+
   .counter {
       margin-top: 30px;
       align-items: last baseline;
-      height: 330px;
       flex-shrink: 0;
       background: #00094F;
   }
@@ -190,7 +212,6 @@
       background: #E6074B;
   }
 
-
   .course-details .btn-grp-fluid {
       height: 76px;
       background: #F1F1F1;
@@ -225,7 +246,6 @@
       line-height: 24px;
       letter-spacing: 0.2px;
   }
- 
 
   #spanish-course .sub-title {
       color: #00094F;
@@ -629,6 +649,44 @@
       letter-spacing: 0.2px;
   }
 
+  .country-btngrp {
+      display: flex;
+      height: 56px;
+      align-items: center;
+      column-gap: 20px;
+      justify-content: flex-start;
+      margin-bottom: 20px;
+      margin-top: 50px;
+  }
+
+  .country-btngrp .lang-btn {
+      color: #34B3E6;
+      text-align: center;
+      font-feature-settings: 'clig' off, 'liga' off;
+      font-family: Montserrat;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 12px;
+      /* 75% */
+      letter-spacing: 0.15px;
+  }
+
+  .country-btngrp .btn::after {
+      content: '';
+      display: flex;
+      width: 0;
+      margin-top: 10px;
+      height: 2px;
+      background-color: #E6074B;
+      transition: width .3s;
+  }
+
+  .country-btngrp .btn:hover::after {
+      width: 100%;
+      transition: width .3s;
+  }
+
   .gallery {
       margin-bottom: 50px;
   }
@@ -799,7 +857,39 @@
       letter-spacing: 0.2px;
   }
 
+  .footer-text {
+      color: #FFF;
+  }
+
+  .admission-form .form-group {
+      margin-bottom: 15px;
+  }
+
+  .btn-inquiry-submit {
+      font-family: "Montserrat", Helvetica;
+      font-weight: 700;
+      color: rgba(255, 255, 255, 1);
+      font-size: 12px;
+      text-align: center;
+      white-space: nowrap;
+      font-style: normal;
+      background-color: #34b3e6;
+      border-radius: 4px;
+      overflow: hidden;
+  }
+
+  form {
+      font-family: "Montserrat", Helvetica;
+      font-weight: 300;
+      font-size: 1rem;
+      font-style: normal;
+  }
+
   @media(max-width: 768px) {
+
+      .headline {
+          margin-top: 125px !important;
+      }
 
       #home .sub-title {
           font-size: 1.7rem !important;
@@ -841,4 +931,18 @@
           letter-spacing: 0.2px;
       }
 
+      .enquiryForm {
+          display: none;
+      }
+
+      .admission-text {
+          display: none;
+      }
+
+      .counter {
+          margin-top: 0px !important;
+          height: 335px;
+          padding-top: 2px !important;
+          padding-bottom: 10px !important;
+      }
   }

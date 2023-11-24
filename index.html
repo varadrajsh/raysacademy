@@ -25,11 +25,8 @@
 
 <body>
     <!-- Nav Bar Section -->
-    <div class="container ">
-
-    </div>
-    <nav class="navbar navbar-expand-md  fixed-top ">
-        <div class="container-fluid">
+    <nav class="navbar navbar-expand-md fixed-top ">
+        <div class="container">
             <div class="navbar-brand"><img class="img-fluid p-lg-5 " src="images/header-logo.png" alt=""></div>
             <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNavAltMarkup">
@@ -37,12 +34,11 @@
                 <span class="my-1 mx-2 close">X</span>
             </button>
             <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
-
                 <div class="navbar-nav coll d-md-none d-sm-flex ">
                     <a class="nav-link" href="#home">Home</a>
                     <a class="nav-link" href="#course-details">Course Details</a>
                     <a class="nav-link" href="#upcomingBatches">Upcoming Batches</a>
-                    <button class="btn d-flex align-items-start p-0  " data-bs-toggle="modal"
+                    <button class="btn d-flex align-items-start p-0" data-bs-toggle="modal"
                         data-bs-target="#staticBackdrop"><img class="p-0 " src="images/Primary Enquire Now-small.png"
                             alt=""></button>
                 </div>
@@ -59,8 +55,10 @@
         </div>
     </nav>
 
+
+
     <!-- Headline Section -->
-    <div id="home" class="container "><br>
+    <div id="home" class="container ">
         <div class="row headline ">
             <div class="col-md-7 col-sm-8 ">
                 <p class="title">Online/Offline</p>
@@ -68,7 +66,8 @@
                 <p class="text">Expand your ability to communicate with people across the globe. Learn Spanish, German &
                     English grammar, vocabulary, and more with online courses.</p>
                 <div>
-                    <button class="btn"><img class="img-fluid" src="images/headline-enq-btn.png" alt=""></button>
+                    <button class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><img class="img-fluid"
+                            src="images/headline-enq-btn.png" alt=""></button>
                     <label class="label"><img src="images/btn-text.png" alt=""></label>
                     <button class="btn"><img class="img-fluid" src="images/Secondary Call us.png" alt=""></button>
                 </div>
@@ -86,9 +85,8 @@
         <div class="">
             <p class="title">Get Prepared For</p>
             <p class="text">We are dedicated to making language learning and enriching an immersive experience. Our
-                mission is to
-                empower its students with the skills to
-                communicate effectively in the language choosen.</p>
+                mission is to empower its students with the skills to communicate effectively in the language choosen.
+            </p>
         </div>
         <div class="row ">
             <div class="col-md-12 ">
@@ -100,19 +98,72 @@
     </div>
 
     <!-- Counter Section -->
-    <div class="container">
-        <div class="row counter">
-            <div class="col-md-4 d-flex justify-content-center align-items-center  ">
-                <p class="count mx-2 ">2045</p>
-                <p class="title">Students<br>Enrolled</p>
+    <div class="container admission-open-bg">
+        <div class="col-sm-12 text-center admission-text mb-5">
+            Admissions Open
+        </div>
+        <div class="row" style="padding: 1rem;">
+            <div class="col-sm-12 enquiryForm">
+                <form class="form-bg">
+                    <div class="row admission-form">
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="txtName" placeholder="Name">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="txtEmail" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <input type="number" class="form-control" id="txtMobileNumber"
+                                    placeholder="Mobile Number">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                            <div class="form-group">
+                                <select id="inputCourse" class="form-control">
+                                    <option value="-1" selected>-- Select Course --</option>
+                                    <option value="1">German</option>
+                                    <option value="2">Spanish</option>
+                                    <option value="3">English</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <select id="inputLevel" class="form-control">
+                                <option value="-1" selected>-- Select Level --</option>
+                                <option value="1">A1</option>
+                                <option value="2">A2</option>
+                                <option value="3">A3</option>
+                                <option value="4">B1</option>
+                                <option value="5">B2</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <button id="btnSubmit" type="button" onclick="SubmitInquiry()"
+                                class="btn-inquiry-submit px-5 py-2 border-0 w-100 h-100">SUBMIT</button>
+                        </div>
+                    </div>
+                </form>
             </div>
-            <div class="col-md-4 d-flex justify-content-center align-items-center ">
-                <p class="count mx-2 ">598</p>
-                <p class="title">Current<br>Sudents</p>
-            </div>
-            <div class="col-md-4 d-flex justify-content-center align-items-center ">
-                <p class="count mx-2 ">966</p>
-                <p class="title">Community<br>Members</p>
+            <div class="row counter">
+                <div class="col-md-4 d-flex justify-content-center align-items-center  ">
+                    <p class="count mx-2 ">2045</p>
+                    <p class="title">Students<br>Enrolled</p>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center align-items-center ">
+                    <p class="count mx-2 ">598</p>
+                    <p class="title">Current<br>Sudents</p>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center align-items-center ">
+                    <p class="count mx-2 ">966</p>
+                    <p class="title">Community<br>Members</p>
+                </div>
             </div>
         </div>
     </div>
@@ -182,9 +233,9 @@
                 <div class="card">
                     <div class="card-body ">
                         <img class=" card-icon img-fluid " src="images/wr-icon-5.svg" alt="">
-                        <h5 class="card-title my-3 ">Community Access</h5>
+                        <h5 class="card-title my-3">Community Access</h5>
                         <div class="underline"></div>
-                        <p class="card-text py-3   ">We're not just an institute; we're a language learning community.
+                        <p class="card-text py-3">We're not just an institute; we're a language learning community.
                             We organize cultural events, language exchange meetups, and workshops that provide our
                             students with opportunities to practice their language skills in real-life settings.</p>
                     </div>
@@ -210,8 +261,8 @@
     </div>
 
     <!-- Course Details Section -->
-    <div id="course-details"></div><br><br>
-    <div id="courseDetails" class="container course-details ">
+    <div id="course-details"></div>
+    <div id="courseDetails" class="container course-details mt-5  "><br><br><br>
         <div>
             <p class="title">Course Details</p>
             <p class="text">At RAYS we follow the structure according to the <span>CEFR (The Common European Framework
@@ -229,8 +280,9 @@
             </div>
         </div>
     </div>
+
     <div id="spanish-course" class="container country"><br><br><br>
-        <div class="top d-flex mb-4 ">
+        <div class="top d-flex my-4 ">
             <div class="">
                 <img class="img-fluid px-3 " src="images/spanish-flag.png" alt="">
             </div>
@@ -428,7 +480,8 @@
             <p class="bottom-text-1">Please contact us for instalments or discounts</p>
         </div>
         <div class="text-center ">
-            <button class="btn"><img class="img-fluid" src="images/Primary Enquire Now.png " alt=""></button>
+            <button class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><img class="img-fluid"
+                    src="images/Primary Enquire Now.png " alt=""></button>
             <label class="label"><img src="images/btn-text.png" alt=""></label>
             <button class="btn"><img class="img-fluid" src="images/Secondary Call us.png" alt=""></button>
         </div>
@@ -632,7 +685,8 @@
             <p class="bottom-text">Please contact us for instalments or discounts</p>
         </div>
         <div class="text-center ">
-            <button class="btn"><img class="img-fluid" src="images/Primary Enquire Now.png " alt=""></button>
+            <button class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><img class="img-fluid"
+                    src="images/Primary Enquire Now.png " alt=""></button>
             <label class="label"><img src="images/btn-text.png" alt=""></label>
             <button class="btn"><img class="img-fluid" src="images/Secondary Call us.png" alt=""></button>
         </div>
@@ -708,7 +762,8 @@
             <p class="bottom-text">Please contact us for instalments or discounts</p>
         </div>
         <div class="text-center  ">
-            <button class="btn"><img class="img-fluid" src="images/Primary Enquire Now.png " alt=""></button>
+            <button class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><img class="img-fluid"
+                    src="images/Primary Enquire Now.png " alt=""></button>
             <label class="label"><img src="images/btn-text.png" alt=""></label>
             <button class="btn"><img class="img-fluid" src="images/Secondary Call us.png" alt=""></button>
         </div>
@@ -760,8 +815,8 @@
                         <p class="bottom-line px-4 ">Please contact us for instalments or discounts</p>
                     </div>
                     <div class="d-lg-flex justify-content-lg-start align-items-center text-center pb-4 ">
-                        <button class="btn"><img class="img-fluid" src="images/Primary Enquire Now.png "
-                                alt=""></button>
+                        <button class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><img
+                                class="img-fluid" src="images/Primary Enquire Now.png " alt=""></button>
                         <label class="label"><img src="images/btn-text.png" alt=""></label>
                         <button class="btn"><img class="img-fluid" src="images/Secondary Call us.png" alt=""></button>
                     </div>
@@ -772,14 +827,14 @@
 
     <!-- Upcoming Batches Section -->
     <div id="upcomingBatches" class="container upcoming-batches"><br><br><br>
-        <div class=" text-center mt-5">
+        <div class=" text-center mt-5  ">
             <h1 class="heading">Upcoming Batches</h1>
             <p class="sub-heading">Get the basics right. Speak with confidence.</p>
         </div>
-        <div class="col-6 d-flex py-4">
-            <div><img src="images/spanish-underline.png" alt=""></div>
-            <div><img src="images/german-underline.png" alt=""></div>
-            <div><img src="images/english-underline.png" alt=""></div>
+        <div class="col-6 country-btngrp">
+            <div><a class="lang-btn btn" href="#">Spanish</a></div>
+            <div><a class="lang-btn btn" href="#">German</a></div>
+            <div><a class="lang-btn btn" href="#">English</a></div>
         </div>
         <div class="row col-lg-12  mx-auto  ">
             <div class="col-lg-4 col-md-6 mb-3">
@@ -889,8 +944,8 @@
                         <p class="bottom-line px-4 ">Please contact us for instalments or discounts</p>
                     </div>
                     <div class="d-lg-flex justify-content-lg-start align-items-center text-center pb-4    ">
-                        <button class="btn"><img class="img-fluid" src="images/Primary Enquire Now.png "
-                                alt=""></button>
+                        <button class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><img
+                                class="img-fluid" src="images/Primary Enquire Now.png " alt=""></button>
                         <label class="label"><img src="images/btn-text.png" alt=""></label>
                         <button class="btn"><img class="img-fluid" src="images/Secondary Call us.png" alt=""></button>
                     </div>
@@ -939,10 +994,11 @@
     </div>
 
     <!-- Footer Section -->
-    <div class="container-fluid  footer ">
-        <div class="text-center  ">
+    <div class="container-fluid footer">
+        <div class="text-center">
             <img class="img-fluid footer-logo py-lg-5 " src="images/footer-logo.png" alt="">
-            <p class="rights-top d-md-block d-lg-none text-center ">All Right Reserved @ Rays Academy</p>
+            <p class="rights-top d-md-block d-lg-none text-center footer-text">All Rights Reserved &copy; Rays Academy
+            </p>
         </div>
         <div class="text-center d-none d-lg-block">
             <p class="title">Experience the new way of learning</p>
@@ -950,13 +1006,14 @@
         </div>
         <div class="group-1 my-lg-5 d-flex flex-column flex-lg-row  justify-content-around  align-items-center gap-5 ">
             <div class="text-center d-lg-flex justify-content-center align-items-center  ">
-                <button class="btn"><img class="img-fluid" src="images/Primary Enquire Now-footer.png " alt=""></button>
+                <button class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><img class="img-fluid"
+                        src="images/Primary Enquire Now-footer.png " alt=""></button>
                 <div><img src="images/btn-text-footer.png" alt=""></div>
                 <button class="btn"><img class="img-fluid" src="images/Secondary Call us-footer.png" alt=""></button>
             </div>
             <div class="email ">
                 <div class="email-id"><img class="email-icon img-fluid " src="images/email-icon.png" alt="">
-                    debra.holt@example.com</div>
+                    info@raysacademy.co.in</div>
             </div>
             <img class=" d-md-block d-lg-none w-100" src="images/hr.png" alt="">
         </div>
@@ -976,10 +1033,10 @@
         <p class="made-small my-4 d-md-block d-lg-none">Made in “Namma Bengaluru”</p>
         <div class="options d-flex justify-content-between mx-5 my-4 d-none d-lg-flex  ">
             <div class="links d-flex gap-5 align-items-center ">
-                <a href="">Home</a>
-                <a href="">Course Details</a>
-                <a href="">Upcoming Batches</a>
-                <a href="">Add on Services</a>
+                <a href="#home">Home</a>
+                <a href="#courseDetails">Course Details</a>
+                <a href="#upcomingBatches">Upcoming Batches</a>
+                <a href="#">Add on Services</a>
             </div>
             <div class="social d-flex gap-5 ">
                 <a href=""><img src="images/facebook.png" alt=""></a>
@@ -989,7 +1046,7 @@
         </div>
         <hr class="hr">
         <div class="bottom-line d-flex justify-content-between mx-5 d-none d-lg-flex ">
-            <p class="rights">All Right Reserved @ Rays Academy </p>
+            <p class="rights">All Right Reserved &copy; Rays Academy </p>
             <p class="made">Made in “Namma Bengaluru”</p>
         </div>
     </div>
@@ -1003,55 +1060,55 @@
                     <h1 class="modal-title fs-5 text-center" id="staticBackdropLabel">Admission Open</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="form-floating col-md-4 mb-4 ">
-                            <input type="text" class="form-control" id="floatingInput" placeholder="">
-                            <label class="mx-2" for="floatingtext">Name</label>
+                <form>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="form-floating col-md-4 mb-4 ">
+                                <input type="text" class="form-control" id="floatingInput" placeholder="Name">
+                                <label class="mx-2" for="floatingtext">Name</label>
+                            </div>
+                            <div class="form-floating col-md-4 mb-4 ">
+                                <input type="email" class="form-control" id="floatingInput" placeholder="Email">
+                                <label class="mx-2" for="floatingEmail">Email address</label>
+                            </div>
+                            <div class="form-floating col-md-4 mb-4 ">
+                                <input type="mobile" class="form-control" id="floatingPassword" placeholder="Mobile">
+                                <label class="mx-2" for="floatingMobile">Mobile</label>
+                            </div>
                         </div>
-                        <div class="form-floating col-md-4 mb-4 ">
-                            <input type="email" class="form-control" id="floatingInput" placeholder="">
-                            <label class="mx-2" for="floatingEmail">Email address</label>
-                        </div>
-                        <div class="form-floating col-md-4 mb-4 ">
-                            <input type="mobile" class="form-control" id="floatingPassword" placeholder="">
-                            <label class="mx-2" for="floatingMobile">Mobile</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-floating col-md-4 mb-4 ">
-                            <select class="form-select" id="floatingSelectLanguageGrid">
-                                <option class="d-none "></option>
-                                <option value="1">Spanish</option>
-                                <option value="2">German</option>
-                                <option value="3">English</option>
-                            </select>
-                            <label class="mx-2 fw-semibold " for="floatingSelectLanguageGrid">Select Course</label>
-                        </div>
-                        <div class="form-floating col-md-4 mb-4 ">
-                            <select class="form-select" id="floatingSelectLevelGrid">
-                                <option class="d-none "></option>
-                                <option value="1">A1</option>
-                                <option value="2">A2</option>
-                                <option value="3">B1</option>
-                                <option value="4">B2</option>
-                                <option value="5">C1</option>
-                                <option value="6">C2</option>
-                            </select>
-                            <label class="mx-2 fw-semibold" for="floatingSelectLevelGrid">Select Level</label>
-                        </div>
-                        <div class="col-md-4 mb-4 ">
-                            <button type="button" class=" btn btn-lg  btn-primary" data-bs-toggle="button"
-                                autocomplete="off" data-bs-dismiss="modal">Submit</button>
+                        <div class="row">
+                            <div class="form-floating col-md-4 mb-4 ">
+                                <select class="form-select" id="floatingSelectLanguageGrid">
+                                    <option class="d-none "></option>
+                                    <option value="1">Spanish</option>
+                                    <option value="2">German</option>
+                                    <option value="3">English</option>
+                                </select>
+                                <label class="mx-2 fw-semibold " for="floatingSelectLanguageGrid">Select Course</label>
+                            </div>
+                            <div class="form-floating col-md-4 mb-4 ">
+                                <select class="form-select" id="floatingSelectLevelGrid">
+                                    <option class="d-none "></option>
+                                    <option value="1">A1</option>
+                                    <option value="2">A2</option>
+                                    <option value="3">B1</option>
+                                    <option value="4">B2</option>
+                                    <option value="5">C1</option>
+                                    <option value="6">C2</option>
+                                </select>
+                                <label class="mx-2 fw-semibold" for="floatingSelectLevelGrid">Select Level</label>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <button type="button" class="btn-inquiry-submit px-5 py-2 border-0 w-100 h-100"
+                                    data-bs-toggle="button" autocomplete="off" data-bs-dismiss="modal">Submit</button>
 
+                            </div>
                         </div>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
     </div>
-
-
     <script>
         const navLinks = document.querySelectorAll('.coll')
         const menuToggle = document.getElementById('navbarNavAltMarkup')
