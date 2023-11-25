@@ -1,4 +1,5 @@
   @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap');
+  @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
 
   * {
       margin: 0;
@@ -42,6 +43,90 @@
   .navbar a:hover {
       border-bottom: 2px solid #E6074B;
       transition: 0.1s linear;
+  }
+
+  .enquire-btn {
+      display: flex;
+      width: 190px;
+      height: 56px;
+      padding: 16px 24px;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      border-radius: 4px;
+      background: #34B3E6;
+      border: none;
+      color: #FFF;
+      font-family: Montserrat;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 22px;
+      letter-spacing: 0.2px;
+  }
+
+  .callus-btn {
+      flex-shrink: 0;
+      display: flex;
+      height: 56px;
+      padding: 16px 24px;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      border-radius: 4px;
+      border: 1px solid #34B3E6;
+      color: #34B3E6;
+      background-color: #FFF;
+      color: #00094F;
+      font-family: Montserrat;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 22px;
+      letter-spacing: 0.2px;
+  }
+
+  .callus-btn span {
+      color: #34B3E6;
+      font-family: Montserrat;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 22px;
+      letter-spacing: 0.2px;
+  }
+
+  .or {
+      color: #737373;
+      font-family: Montserrat;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 22px;
+      letter-spacing: 0.2px;
+  }
+
+  .btn1-grp {
+      flex-direction: column;
+  }
+
+  .buttons-grp {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+  }
+
+  .button-text {
+      color: #00094F;
+      font-family: Montserrat;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 20px;
+      letter-spacing: 0.2px;
+      margin-bottom: 35px;
   }
 
   .headline {
@@ -212,6 +297,7 @@
       background: #E6074B;
   }
 
+  /* 
   .course-details .btn-grp-fluid {
       height: 76px;
       background: #F1F1F1;
@@ -225,7 +311,8 @@
       font-weight: 400;
       border: none;
       padding: 10px;
-  }
+  } */
+
 
   #german-course .title {
       color: #9AC979;
@@ -659,6 +746,28 @@
       font-weight: 400;
       line-height: 20px;
       letter-spacing: 0.2px;
+      margin-bottom: 100px;
+  }
+
+  .upcoming-batches .register-btn {
+      display: flex;
+      width: 180px;
+      height: 44px;
+      padding: 16px;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      flex-shrink: 0;
+      border-radius: 4px;
+      background: #34B3E6;
+      border: none;
+      color: #FFF;
+      font-family: Montserrat;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 22px;
+      letter-spacing: 0.2px;
   }
 
   .country-btngrp {
@@ -845,6 +954,69 @@
       font-weight: 400;
       line-height: 20px;
       letter-spacing: 0.2px;
+  }
+
+  .footer .enquire {
+      display: flex;
+      width: 180px;
+      height: 44px;
+      padding: 16px;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      border-radius: 4px;
+      color: #FFFFFF;
+      background: #34B3E6;
+      border: none;
+      color: #FFF;
+      font-family: Montserrat;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 22px;
+      letter-spacing: 0.2px;
+  }
+
+  .footer .or {
+      color: #FFF;
+      text-align: center;
+
+      /* btn-text */
+      font-family: Montserrat;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 22px;
+      /* 157.143% */
+      letter-spacing: 0.2px;
+  }
+
+  .footer .callus-btn1 {
+      display: flex;
+      height: 44px;
+      padding: 16px;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      border-radius: 4px;
+      border: 1px solid #34B3E6;
+      color: #FFF;
+      font-family: Montserrat;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 22px;
+      /* 137.5% */
+      letter-spacing: 0.2px;
+  }
+
+  .footer .callus-btn1 span {
+      color: #34B3E6;
+
+  }
+
+  .footer .social a {
+      color: green;
   }
 
   .modal-title {
