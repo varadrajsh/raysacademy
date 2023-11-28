@@ -25,7 +25,7 @@
 
 <body>
     <!-- Nav Bar Section -->
-    <nav class="navbar navbar-expand-md fixed-top ">
+    <nav id="navbar" class="navbar navbar-expand-md fixed-top ">
         <div class="container">
             <div class="navbar-brand"><img class="img-fluid p-lg-5 " src="images/header-logo.png" alt=""></div>
             <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-bs-toggle="collapse"
@@ -1126,12 +1126,26 @@
         </div>
     </div>
     <script>
+        //    Navbar Close
         const navLinks = document.querySelectorAll('.coll')
         const menuToggle = document.getElementById('navbarNavAltMarkup')
         const bsCollapse = new bootstrap.Collapse(menuToggle, { toggle: false })
         navLinks.forEach((l) => {
             l.addEventListener('click', () => { bsCollapse.toggle() })
         })
+
+
+        // Header Hide On Scroll
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-100px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
     </script>
 </body>
 
